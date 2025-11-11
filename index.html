@@ -558,65 +558,59 @@ Yuk biasakan literasi dulu ya kak 📖🙏🏻</h4><br></br>
 }
 
 .ig-button:hover {
-    transform: scale(1.1); /* membesar sedikit */
-    box-shadow: 0 4px 20px rgba(0,0,0,0.4); /* glow lebih nyata */
+    transform: scale(1.1);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
 }
 
-/* Tombol Telegram tetap statis */
-.wa-button {
+/* Tombol Umum */
+.btn-float {
     position: fixed;
-    bottom: 80px;
     right: 20px;
     border-radius: 50px;
-    background-color: #0088cc;
-    color: #fff;
     padding: 14px 20px;
+    color: #fff;
+    text-decoration: none;
     box-shadow: 0 2px 10px rgba(0,0,0,0.3);
     font-size: 1rem;
-    text-decoration: none;
     transition: all 0.3s ease;
 }
 
-.wa-button:hover {
+.btn-float:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 15px rgba(0,0,0,0.35);
 }
+
+/* Warna */
+.btn-telegram {
+    background-color: #0088cc;
+}
+
+.btn-wa {
+    background-color: #25D366;
+}
 </style>
 
-<!-- Tombol Telegram Admin --> 
-<a href="https://t.me/jnzlbhr" class="wa-button" 
-  style="position: fixed; bottom: 80px; right: 20px; border-radius: 50px; background-color: #0088cc; 
-  color: #fff; padding: 14px 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.3); font-size: 1rem; 
-  text-decoration: none;"> Admin Telegram </a>
+<!-- Tombol Telegram -->
+<a href="https://t.me/jnzlbhr" 
+   class="btn-float btn-telegram" 
+   style="bottom: 140px;">
+   Admin Telegram
+</a>
 
-<!-- Tombol WhatsApp Admin -->
-<a href="https://wa.me/6282197354256" 
-   class="wa-button" 
-   style="position: fixed; 
-          bottom: 80px; 
-          right: 20px; 
-          border-radius: 50px; 
-          background-color: #25D366; 
-          color: #fff; 
-          padding: 14px 20px; 
-          box-shadow: 0 2px 10px rgba(0,0,0,0.3); 
-          font-size: 1rem; 
-          text-decoration: none;">
-    Admin WA 1
+<!-- Tombol WhatsApp Admin 1 -->
+<a href="https://wa.me/6282197354256"
+   class="btn-float btn-wa"
+   style="bottom: 80px;">
+   Admin WA 1
 </a>
-<a href="https://wa.me/6289603829780" 
-   style="position: fixed; 
-          bottom: 80px; 
-          right: 20px; 
-          border-radius: 50px; 
-          background-color: #25D366; 
-          color: #fff; 
-          padding: 14px 20px; 
-          box-shadow: 0 2px 10px rgba(0,0,0,0.3); 
-          font-size: 1rem; 
-          text-decoration: none;">
-    Admin WA 2
+
+<!-- Tombol WhatsApp Admin 2 -->
+<a href="https://wa.me/6289603829780"
+   class="btn-float btn-wa"
+   style="bottom: 20px;">
+   Admin WA 2
 </a>
+
 
 </section>
   <script>
