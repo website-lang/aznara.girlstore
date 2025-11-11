@@ -500,7 +500,7 @@ Yuk biasakan literasi dulu ya kak 📖🙏🏻</h4><br></br>
 /* Tooltip container */
 .telegram-tooltip {
   position: fixed;
-  bottom: 20px;
+  bottom: 200px;
   right: 20px;
   width: 60px;
   height: 60px;
@@ -524,45 +524,22 @@ Yuk biasakan literasi dulu ya kak 📖🙏🏻</h4><br></br>
   padding: 6px 8px;
   border-radius: 4px;
   position: absolute;
-  bottom: 70px; /* posisi di atas tombol */
+  bottom: 70px;
   right: 50%;
   transform: translateX(50%);
   opacity: 0;
   transition: opacity 0.3s;
   font-size: 12px;
-  pointer-events: none; /* agar tooltip tidak mengganggu klik */
+  pointer-events: none;
 }
 
-/* Tampilkan tooltip saat hover */
 .telegram-tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
 }
-</style>
 
-<!-- Tombol WA Admin 1 -->
-<style>
-/* Tombol Instagram */
-.ig-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    border-radius: 50px;
-    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-    color: #fff;
-    padding: 14px 20px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-    font-size: 1rem;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
+/* ---------------- BUTTON FLOAT ---------------- */
 
-.ig-button:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
-}
-
-/* Tombol Umum */
 .btn-float {
     position: fixed;
     right: 20px;
@@ -580,36 +557,31 @@ Yuk biasakan literasi dulu ya kak 📖🙏🏻</h4><br></br>
     box-shadow: 0 4px 15px rgba(0,0,0,0.35);
 }
 
-/* Warna */
-.btn-telegram {
-    background-color: #0088cc;
-}
-
-.btn-wa {
-    background-color: #25D366;
-}
+.btn-wa { background-color: #25D366; }
+.btn-telegram { background-color: #0088cc; }
 </style>
 
 <!-- Tombol Telegram -->
 <a href="https://t.me/jnzlbhr" 
    class="btn-float btn-telegram" 
-   style="bottom: 140px;">
+   style="bottom: 200px;">
    Admin Telegram
 </a>
 
 <!-- Tombol WhatsApp Admin 1 -->
 <a href="https://wa.me/6282197354256"
    class="btn-float btn-wa"
-   style="bottom: 80px;">
+   style="bottom: 140px;">
    Admin WA 1
 </a>
 
 <!-- Tombol WhatsApp Admin 2 -->
 <a href="https://wa.me/6289603829780"
    class="btn-float btn-wa"
-   style="bottom: 20px;">
+   style="bottom: 80px;">
    Admin WA 2
 </a>
+
 
 
 </section>
